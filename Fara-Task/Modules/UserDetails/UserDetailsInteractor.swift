@@ -19,7 +19,15 @@ class UserDetailsInteractor {
     func viewModel() -> UserDetailsViewModel {
         return .init(
             onBackTapped: { [router] in router.dismiss() },
-            userBasicInfo: .init(name: user.name, address: user.address.openAddress)
+            userBasicInfo: .init(name: user.name, address: user.address.openAddress),
+            mapViewModel: .init(
+                mapAnnotationTitle: user.address.street + "\n" + user.address.suite,
+                latitute: user.address.geo.lat,
+                longitute: user.address.geo.lng
+            ),
+            email: user.email,
+            phone: user.phone,
+            company: user.company.name
         )
     }
 }

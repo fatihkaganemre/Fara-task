@@ -29,6 +29,7 @@
 		3DB69BF22634A5DB005BF599 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BF12634A5DB005BF599 /* Parsing.swift */; };
 		3DB69BF72634A626005BF599 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BF62634A626005BF599 /* UserService.swift */; };
 		3DB69BFF2634ACB5005BF599 /* UserBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BFE2634ACB5005BF599 /* UserBasicInfoView.swift */; };
+		3DB69C042634B6EE005BF599 /* MapViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69C032634B6EE005BF599 /* MapViewHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		3DB69BF12634A5DB005BF599 /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		3DB69BF62634A626005BF599 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3DB69BFE2634ACB5005BF599 /* UserBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBasicInfoView.swift; sourceTree = "<group>"; };
+		3DB69C032634B6EE005BF599 /* MapViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				3DB69BA52634352E005BF599 /* UserDetailsViewController.swift */,
 				3DB69BAA2634353C005BF599 /* UserDetailsInteractor.swift */,
 				3DB69BAF2634354D005BF599 /* UserDetailsRouter.swift */,
+				3DB69C032634B6EE005BF599 /* MapViewHelper.swift */,
 			);
 			path = UserDetails;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				3DB69B5A26343392005BF599 /* AppDelegate.swift in Sources */,
 				3DB69BAB2634353C005BF599 /* UserDetailsInteractor.swift in Sources */,
 				3DB69BB02634354D005BF599 /* UserDetailsRouter.swift in Sources */,
+				3DB69C042634B6EE005BF599 /* MapViewHelper.swift in Sources */,
 				3DB69BA126343521005BF599 /* UserDetailsView.swift in Sources */,
 				3DB69BA62634352E005BF599 /* UserDetailsViewController.swift in Sources */,
 				3DB69BFF2634ACB5005BF599 /* UserBasicInfoView.swift in Sources */,

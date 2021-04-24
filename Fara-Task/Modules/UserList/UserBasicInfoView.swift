@@ -16,7 +16,7 @@ struct UserBasicInfoViewModel {
 class UserBasicInfoView: UIView {
     private let nameLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.font = .systemFont(ofSize: 20, weight: .bold)
         label.textAlignment = .left
         label.numberOfLines = 0
         label.textColor = .black
@@ -24,9 +24,9 @@ class UserBasicInfoView: UIView {
     }()
     private let addressLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .light)
+        label.font = .systemFont(ofSize: 16, weight: .regular)
         label.textAlignment = .left
-        label.textColor = .black
+        label.textColor = .darkGray
         label.numberOfLines = 0
         return label
     }()
