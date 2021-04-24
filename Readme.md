@@ -1,10 +1,10 @@
 # UI Pattern
 I ve used sth between MVVM and Viper. 
--> View: View is the only place which imports UIKit, I ve configured autolayout programatically
--> ViewModel: It is used for passing the data to view and gets the userInteractions
--> ViewController: Just a man in the middle , I ve tried to keep it as simple as possible. Defines the view and calls interactor functions depends on app cycle
--> Interactor: In MVVM you can call it ViewModel , I ve used Interactor name for removing name conflict. It is used for business logic.
--> Router: As its name describes, it is used for routing. It keeps weak controller object in order to prevent retain cycle
+- View: View is the only place which imports UIKit, I ve configured autolayout programatically
+- ViewModel: It is used for passing the data to view and gets the userInteractions
+- ViewController: Just a man in the middle , I ve tried to keep it as simple as possible. Defines the view and calls interactor functions depends on app cycle
+- Interactor: In MVVM you can call it ViewModel , I ve used Interactor name for removing name conflict. It is used for business logic.
+- Router: As its name describes, it is used for routing. It keeps weak controller object in order to prevent retain cycle
 
 # WebService
 I didnt want to make it very complicated , I created a simple and also generic webServiceCore which any related Service e.g UserService can use.
