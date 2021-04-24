@@ -17,6 +17,7 @@ I have experience with Cocoapods, Carthage (preferebly with Rome). However there
 # Test
 I implemented UnitTests with "given, when, then" pattern and for name of test functions i ve used "when_should" convention.
 
-## P.S: I ve checked given lat and long values on Apple and Google maps and I assume either they are just test datas , or there is a mistake.
+## P.S
+I ve checked given lat and long values on Apple and Google maps and I assume either they are just test datas , or there is a mistake.
 or I should convert their sign (I am not sure about that.)
 
