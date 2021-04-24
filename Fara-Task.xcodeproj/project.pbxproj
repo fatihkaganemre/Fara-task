@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3DB69B5A26343392005BF599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69B5926343392005BF599 /* AppDelegate.swift */; };
-		3DB69B5C26343392005BF599 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69B5B26343392005BF599 /* SceneDelegate.swift */; };
-		3DB69B5E26343392005BF599 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69B5D26343392005BF599 /* ContentView.swift */; };
 		3DB69B6026343393005BF599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB69B5F26343393005BF599 /* Assets.xcassets */; };
-		3DB69B6326343393005BF599 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB69B6226343393005BF599 /* Preview Assets.xcassets */; };
 		3DB69B6626343393005BF599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB69B6426343393005BF599 /* LaunchScreen.storyboard */; };
 		3DB69B7126343393005BF599 /* Fara_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69B7026343393005BF599 /* Fara_TaskTests.swift */; };
 		3DB69B7C26343393005BF599 /* Fara_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69B7B26343393005BF599 /* Fara_TaskUITests.swift */; };
+		3DB69B99263434DC005BF599 /* ControllersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69B98263434DC005BF599 /* ControllersBuilder.swift */; };
+		3DB69BA126343521005BF599 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BA026343521005BF599 /* UserDetailsView.swift */; };
+		3DB69BA62634352E005BF599 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BA52634352E005BF599 /* UserDetailsViewController.swift */; };
+		3DB69BAB2634353C005BF599 /* UserDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BAA2634353C005BF599 /* UserDetailsInteractor.swift */; };
+		3DB69BB02634354D005BF599 /* UserDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BAF2634354D005BF599 /* UserDetailsRouter.swift */; };
+		3DB69BB52634355A005BF599 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BB42634355A005BF599 /* UserListView.swift */; };
+		3DB69BBA26343566005BF599 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BB926343566005BF599 /* UserListViewController.swift */; };
+		3DB69BBF26343570005BF599 /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BBE26343570005BF599 /* UserListInteractor.swift */; };
+		3DB69BC42634357B005BF599 /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BC32634357B005BF599 /* UserListRouter.swift */; };
+		3DB69BCB263439CB005BF599 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BCA263439CB005BF599 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +44,7 @@
 /* Begin PBXFileReference section */
 		3DB69B5626343392005BF599 /* Fara-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fara-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB69B5926343392005BF599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DB69B5B26343392005BF599 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DB69B5D26343392005BF599 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DB69B5F26343393005BF599 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3DB69B6226343393005BF599 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DB69B6526343393005BF599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DB69B6726343393005BF599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB69B6C26343393005BF599 /* Fara-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fara-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +53,16 @@
 		3DB69B7726343393005BF599 /* Fara-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fara-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB69B7B26343393005BF599 /* Fara_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fara_TaskUITests.swift; sourceTree = "<group>"; };
 		3DB69B7D26343393005BF599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB69B98263434DC005BF599 /* ControllersBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersBuilder.swift; sourceTree = "<group>"; };
+		3DB69BA026343521005BF599 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		3DB69BA52634352E005BF599 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		3DB69BAA2634353C005BF599 /* UserDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsInteractor.swift; sourceTree = "<group>"; };
+		3DB69BAF2634354D005BF599 /* UserDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsRouter.swift; sourceTree = "<group>"; };
+		3DB69BB42634355A005BF599 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		3DB69BB926343566005BF599 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		3DB69BBE26343570005BF599 /* UserListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
+		3DB69BC32634357B005BF599 /* UserListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
+		3DB69BCA263439CB005BF599 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,23 +113,15 @@
 		3DB69B5826343392005BF599 /* Fara-Task */ = {
 			isa = PBXGroup;
 			children = (
+				3DB69BC9263439C2005BF599 /* Models */,
+				3DB69BC826343583005BF599 /* Helpers */,
+				3DB69B952634349B005BF599 /* Modules */,
 				3DB69B5926343392005BF599 /* AppDelegate.swift */,
-				3DB69B5B26343392005BF599 /* SceneDelegate.swift */,
-				3DB69B5D26343392005BF599 /* ContentView.swift */,
 				3DB69B5F26343393005BF599 /* Assets.xcassets */,
 				3DB69B6426343393005BF599 /* LaunchScreen.storyboard */,
 				3DB69B6726343393005BF599 /* Info.plist */,
-				3DB69B6126343393005BF599 /* Preview Content */,
 			);
 			path = "Fara-Task";
-			sourceTree = "<group>";
-		};
-		3DB69B6126343393005BF599 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3DB69B6226343393005BF599 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		3DB69B6F26343393005BF599 /* Fara-TaskTests */ = {
@@ -134,6 +140,53 @@
 				3DB69B7D26343393005BF599 /* Info.plist */,
 			);
 			path = "Fara-TaskUITests";
+			sourceTree = "<group>";
+		};
+		3DB69B952634349B005BF599 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3DB69B98263434DC005BF599 /* ControllersBuilder.swift */,
+				3DB69B97263434C5005BF599 /* UserDetails */,
+				3DB69B96263434BC005BF599 /* UserList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3DB69B96263434BC005BF599 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				3DB69BB42634355A005BF599 /* UserListView.swift */,
+				3DB69BB926343566005BF599 /* UserListViewController.swift */,
+				3DB69BBE26343570005BF599 /* UserListInteractor.swift */,
+				3DB69BC32634357B005BF599 /* UserListRouter.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		3DB69B97263434C5005BF599 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3DB69BA026343521005BF599 /* UserDetailsView.swift */,
+				3DB69BA52634352E005BF599 /* UserDetailsViewController.swift */,
+				3DB69BAA2634353C005BF599 /* UserDetailsInteractor.swift */,
+				3DB69BAF2634354D005BF599 /* UserDetailsRouter.swift */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		3DB69BC826343583005BF599 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DB69BC9263439C2005BF599 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DB69BCA263439CB005BF599 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +293,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB69B6626343393005BF599 /* LaunchScreen.storyboard in Resources */,
-				3DB69B6326343393005BF599 /* Preview Assets.xcassets in Resources */,
 				3DB69B6026343393005BF599 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB69BB52634355A005BF599 /* UserListView.swift in Sources */,
+				3DB69BBA26343566005BF599 /* UserListViewController.swift in Sources */,
 				3DB69B5A26343392005BF599 /* AppDelegate.swift in Sources */,
-				3DB69B5C26343392005BF599 /* SceneDelegate.swift in Sources */,
-				3DB69B5E26343392005BF599 /* ContentView.swift in Sources */,
+				3DB69BAB2634353C005BF599 /* UserDetailsInteractor.swift in Sources */,
+				3DB69BB02634354D005BF599 /* UserDetailsRouter.swift in Sources */,
+				3DB69BA126343521005BF599 /* UserDetailsView.swift in Sources */,
+				3DB69BA62634352E005BF599 /* UserDetailsViewController.swift in Sources */,
+				3DB69BBF26343570005BF599 /* UserListInteractor.swift in Sources */,
+				3DB69B99263434DC005BF599 /* ControllersBuilder.swift in Sources */,
+				3DB69BC42634357B005BF599 /* UserListRouter.swift in Sources */,
+				3DB69BCB263439CB005BF599 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +497,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Fara-Task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Fara-Task/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,7 +516,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Fara-Task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Fara-Task/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
