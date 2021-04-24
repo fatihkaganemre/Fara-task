@@ -28,6 +28,7 @@
 		3DB69BEA2634A552005BF599 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BE92634A552005BF599 /* WebService.swift */; };
 		3DB69BF22634A5DB005BF599 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BF12634A5DB005BF599 /* Parsing.swift */; };
 		3DB69BF72634A626005BF599 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BF62634A626005BF599 /* UserService.swift */; };
+		3DB69BFF2634ACB5005BF599 /* UserBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BFE2634ACB5005BF599 /* UserBasicInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		3DB69BE92634A552005BF599 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		3DB69BF12634A5DB005BF599 /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		3DB69BF62634A626005BF599 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		3DB69BFE2634ACB5005BF599 /* UserBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBasicInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				3DB69BB926343566005BF599 /* UserListTableViewController.swift */,
 				3DB69BBE26343570005BF599 /* UserListInteractor.swift */,
 				3DB69BC32634357B005BF599 /* UserListRouter.swift */,
+				3DB69BFE2634ACB5005BF599 /* UserBasicInfoView.swift */,
 			);
 			path = UserList;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				3DB69BB02634354D005BF599 /* UserDetailsRouter.swift in Sources */,
 				3DB69BA126343521005BF599 /* UserDetailsView.swift in Sources */,
 				3DB69BA62634352E005BF599 /* UserDetailsViewController.swift in Sources */,
+				3DB69BFF2634ACB5005BF599 /* UserBasicInfoView.swift in Sources */,
 				3DB69BBF26343570005BF599 /* UserListInteractor.swift in Sources */,
 				3DB69B99263434DC005BF599 /* ControllersBuilder.swift in Sources */,
 				3DB69BF22634A5DB005BF599 /* Parsing.swift in Sources */,

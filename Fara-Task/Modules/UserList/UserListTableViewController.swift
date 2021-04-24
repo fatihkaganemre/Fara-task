@@ -39,8 +39,7 @@ class UserListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(UserListCell.self)
         let user = users[indexPath.row]
         let viewModel = UserListCellViewModel(
-            name: user.name,
-            address: user.address.openAddress,
+            userBasicInfo: .init(name: user.name, address: user.address.openAddress),
             onTap: { [interactor] in interactor.onTap(user: user) }
         )
         cell.bind(withViewModel: viewModel)
