@@ -15,7 +15,7 @@ struct UserDetailsViewModel {
 class UserDetailsView: UIView {
     init(viewModel: UserDetailsViewModel) {
         super.init(frame: .zero)
-        
+        backgroundColor = .customYellow
     }
     
     required init?(coder: NSCoder) {

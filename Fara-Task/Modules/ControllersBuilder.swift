@@ -12,7 +12,7 @@ struct ControllersBuilder {
     func buildUserListController() -> UIViewController {
         let router = UserListRouterImp(builder: self)
         let interactor = UserListInteractor(router: router)
-        let controller = UserListViewController(interactor: interactor)
+        let controller = UserListTableViewController(interactor: interactor)
         router.controller = controller
         return controller
     }

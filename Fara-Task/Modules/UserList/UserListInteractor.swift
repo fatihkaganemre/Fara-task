@@ -14,4 +14,7 @@ class UserListInteractor {
         self.router = router
     }
     
+    func onTap(user: User) {
+        router.showDetails(forUser: user)
+    }
 }
