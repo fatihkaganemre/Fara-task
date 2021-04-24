@@ -7,10 +7,14 @@
 
 import Foundation
 
-class UserService {
+protocol UserService {
+    func fetchUsers(_ completion: @escaping ((Result<[User], Error>) -> Void))
+}
+
+class UserServiceImp: UserService {
     private let webServiceCore: WebServiceCore
     
-    init(webServiceCore: WebServiceCore) {
+    init(webServiceCore: WebServiceCore = WebServiceCoreImp()) {
         self.webServiceCore = webServiceCore
     }
     

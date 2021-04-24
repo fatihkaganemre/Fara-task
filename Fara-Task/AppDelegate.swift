@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let controller = ControllersBuilder().buildUserListController()
         window!.rootViewController = controller
         window!.makeKeyAndVisible()
-        
         return true
     }
 }

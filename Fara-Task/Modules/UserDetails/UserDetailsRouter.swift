@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol UserDetailsRouter {
+protocol UserDetailsRouter: Router {
     func dismiss()
 }
 
@@ -18,9 +18,5 @@ class UserDetailsRouterImp: UserDetailsRouter {
     
     init(builder: ControllersBuilder) {
         self.builder = builder
-    }
-    
-    func dismiss() {
-        controller.dismiss(animated: true, completion: nil)
     }
 }

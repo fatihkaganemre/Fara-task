@@ -17,6 +17,9 @@ class UserListTableViewController: UITableViewController {
         tableView.registerReusableCell(UserListCell.self)
         tableView.separatorStyle = .none
         tableView.backgroundColor = .customYellow
+        interactor.reoladTable = { [tableView] in
+            tableView?.reloadData()
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -25,9 +28,7 @@ class UserListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        interactor.reoladTable = { [tableView] in
-            tableView?.reloadData()
-        }
+        interactor.fetchUsers()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

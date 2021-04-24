@@ -9,6 +9,7 @@ import Foundation
 
 class UserListInteractor {
     private let router: UserListRouter
+    private let userService: UserService
     private(set) var users: [User]? {
         didSet {
             self.reoladTable()
@@ -16,19 +17,27 @@ class UserListInteractor {
     }
     var reoladTable: () -> Void = {}
     
-    init(router: UserListRouter) {
+    init(
+        router: UserListRouter,
+        userService: UserService = UserServiceImp()
+    ) {
         self.router = router
-        
-        UserService(webServiceCore: WebServiceCoreImp()).fetchUsers { [unowned self] result in
-            switch result {
-            case let .success(users):
-                self.users = users
-            case let .failure(error): break
-            }
-        }
+        self.userService = userService
     }
     
     func onTap(user: User) {
         router.showDetails(forUser: user)
+    }
+    
+    func fetchUsers() {
+        userService.fetchUsers { [unowned self, router] result in
+            switch result {
+            case let .success(users):
+                self.users = users
+                router.present(alert: .requestFailedAlert(errorMessage: "error.localizedDescription"))
+            case let .failure(error):
+                router.present(alert: .requestFailedAlert(errorMessage: error.localizedDescription))
+            }
+        }
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol UserListRouter {
+protocol UserListRouter: AlertRoutable {
     func showDetails(forUser user: User)
 }
 
@@ -23,6 +23,6 @@ class UserListRouterImp: UserListRouter {
     func showDetails(forUser user: User) {
         let controller = builder.buildUserDetailsController(user: user)
         controller.modalPresentationStyle = .fullScreen
-        self.controller.present(controller, animated: true, completion: nil)
+        present(controller: controller)
     }
 }

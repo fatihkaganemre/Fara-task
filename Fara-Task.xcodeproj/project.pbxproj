@@ -30,6 +30,12 @@
 		3DB69BF72634A626005BF599 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BF62634A626005BF599 /* UserService.swift */; };
 		3DB69BFF2634ACB5005BF599 /* UserBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BFE2634ACB5005BF599 /* UserBasicInfoView.swift */; };
 		3DB69C042634B6EE005BF599 /* MapViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69C032634B6EE005BF599 /* MapViewHelper.swift */; };
+		3DB69C0A2634C2D4005BF599 /* UserListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69C092634C2D4005BF599 /* UserListInteractorTests.swift */; };
+		3DB69C122634C2E6005BF599 /* UserDetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69C112634C2E6005BF599 /* UserDetailsInteractorTests.swift */; };
+		3DB69C172634C50E005BF599 /* MockHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69C162634C50E005BF599 /* MockHelpers.swift */; };
+		3DB69C242634CAE5005BF599 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69C232634CAE5005BF599 /* AlertViewModel.swift */; };
+		3DB69C292634CB08005BF599 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69C282634CB08005BF599 /* Router.swift */; };
+		3DB69C2E2634CB6E005BF599 /* AlertRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69C2D2634CB6E005BF599 /* AlertRoutable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,12 @@
 		3DB69BF62634A626005BF599 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3DB69BFE2634ACB5005BF599 /* UserBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBasicInfoView.swift; sourceTree = "<group>"; };
 		3DB69C032634B6EE005BF599 /* MapViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewHelper.swift; sourceTree = "<group>"; };
+		3DB69C092634C2D4005BF599 /* UserListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractorTests.swift; sourceTree = "<group>"; };
+		3DB69C112634C2E6005BF599 /* UserDetailsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsInteractorTests.swift; sourceTree = "<group>"; };
+		3DB69C162634C50E005BF599 /* MockHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHelpers.swift; sourceTree = "<group>"; };
+		3DB69C232634CAE5005BF599 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
+		3DB69C282634CB08005BF599 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3DB69C2D2634CB6E005BF599 /* AlertRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRoutable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +157,10 @@
 		3DB69B6F26343393005BF599 /* Fara-TaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				3DB69C082634C2BE005BF599 /* InteractorTests */,
 				3DB69B7026343393005BF599 /* Fara_TaskTests.swift */,
 				3DB69B7226343393005BF599 /* Info.plist */,
+				3DB69C162634C50E005BF599 /* MockHelpers.swift */,
 			);
 			path = "Fara-TaskTests";
 			sourceTree = "<group>";
@@ -197,6 +211,9 @@
 		3DB69BC826343583005BF599 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3DB69C232634CAE5005BF599 /* AlertViewModel.swift */,
+				3DB69C282634CB08005BF599 /* Router.swift */,
+				3DB69C2D2634CB6E005BF599 /* AlertRoutable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -227,6 +244,15 @@
 				3DB69BF62634A626005BF599 /* UserService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3DB69C082634C2BE005BF599 /* InteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DB69C092634C2D4005BF599 /* UserListInteractorTests.swift */,
+				3DB69C112634C2E6005BF599 /* UserDetailsInteractorTests.swift */,
+			);
+			path = InteractorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,13 +386,16 @@
 			files = (
 				3DB69BB52634355A005BF599 /* UserListCell.swift in Sources */,
 				3DB69BE426349672005BF599 /* UIColorExtensions.swift in Sources */,
+				3DB69C2E2634CB6E005BF599 /* AlertRoutable.swift in Sources */,
 				3DB69BBA26343566005BF599 /* UserListTableViewController.swift in Sources */,
+				3DB69C242634CAE5005BF599 /* AlertViewModel.swift in Sources */,
 				3DB69BEA2634A552005BF599 /* WebService.swift in Sources */,
 				3DB69BDC2634957F005BF599 /* Reusables.swift in Sources */,
 				3DB69B5A26343392005BF599 /* AppDelegate.swift in Sources */,
 				3DB69BAB2634353C005BF599 /* UserDetailsInteractor.swift in Sources */,
 				3DB69BB02634354D005BF599 /* UserDetailsRouter.swift in Sources */,
 				3DB69C042634B6EE005BF599 /* MapViewHelper.swift in Sources */,
+				3DB69C292634CB08005BF599 /* Router.swift in Sources */,
 				3DB69BA126343521005BF599 /* UserDetailsView.swift in Sources */,
 				3DB69BA62634352E005BF599 /* UserDetailsViewController.swift in Sources */,
 				3DB69BFF2634ACB5005BF599 /* UserBasicInfoView.swift in Sources */,
@@ -384,7 +413,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB69C122634C2E6005BF599 /* UserDetailsInteractorTests.swift in Sources */,
+				3DB69C172634C50E005BF599 /* MockHelpers.swift in Sources */,
 				3DB69B7126343393005BF599 /* Fara_TaskTests.swift in Sources */,
+				3DB69C0A2634C2D4005BF599 /* UserListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
