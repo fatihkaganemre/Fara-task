@@ -28,6 +28,10 @@ struct User: Decodable {
             let lat: String
             let lng: String
         }
+        
+        var openAddress: String {
+            "\(street), \(suite)\n" + "\(zipcode) \(city)"
+        }
     }
     
     struct Company: Decodable {

@@ -25,6 +25,9 @@
 		3DB69BD726349533005BF599 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BD626349533005BF599 /* UIViewExtensions.swift */; };
 		3DB69BDC2634957F005BF599 /* Reusables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BDB2634957F005BF599 /* Reusables.swift */; };
 		3DB69BE426349672005BF599 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BE326349672005BF599 /* UIColorExtensions.swift */; };
+		3DB69BEA2634A552005BF599 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BE92634A552005BF599 /* WebService.swift */; };
+		3DB69BF22634A5DB005BF599 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BF12634A5DB005BF599 /* Parsing.swift */; };
+		3DB69BF72634A626005BF599 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB69BF62634A626005BF599 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		3DB69BD626349533005BF599 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3DB69BDB2634957F005BF599 /* Reusables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusables.swift; sourceTree = "<group>"; };
 		3DB69BE326349672005BF599 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		3DB69BE92634A552005BF599 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		3DB69BF12634A5DB005BF599 /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
+		3DB69BF62634A626005BF599 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 		3DB69B5826343392005BF599 /* Fara-Task */ = {
 			isa = PBXGroup;
 			children = (
+				3DB69BE82634A547005BF599 /* Services */,
 				3DB69BD526349523005BF599 /* Extensions */,
 				3DB69BC9263439C2005BF599 /* Models */,
 				3DB69BC826343583005BF599 /* Helpers */,
@@ -204,6 +211,16 @@
 				3DB69BE326349672005BF599 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3DB69BE82634A547005BF599 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3DB69BE92634A552005BF599 /* WebService.swift */,
+				3DB69BF12634A5DB005BF599 /* Parsing.swift */,
+				3DB69BF62634A626005BF599 /* UserService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +355,7 @@
 				3DB69BB52634355A005BF599 /* UserListCell.swift in Sources */,
 				3DB69BE426349672005BF599 /* UIColorExtensions.swift in Sources */,
 				3DB69BBA26343566005BF599 /* UserListTableViewController.swift in Sources */,
+				3DB69BEA2634A552005BF599 /* WebService.swift in Sources */,
 				3DB69BDC2634957F005BF599 /* Reusables.swift in Sources */,
 				3DB69B5A26343392005BF599 /* AppDelegate.swift in Sources */,
 				3DB69BAB2634353C005BF599 /* UserDetailsInteractor.swift in Sources */,
@@ -346,6 +364,8 @@
 				3DB69BA62634352E005BF599 /* UserDetailsViewController.swift in Sources */,
 				3DB69BBF26343570005BF599 /* UserListInteractor.swift in Sources */,
 				3DB69B99263434DC005BF599 /* ControllersBuilder.swift in Sources */,
+				3DB69BF22634A5DB005BF599 /* Parsing.swift in Sources */,
+				3DB69BF72634A626005BF599 /* UserService.swift in Sources */,
 				3DB69BC42634357B005BF599 /* UserListRouter.swift in Sources */,
 				3DB69BD726349533005BF599 /* UIViewExtensions.swift in Sources */,
 				3DB69BCB263439CB005BF599 /* User.swift in Sources */,

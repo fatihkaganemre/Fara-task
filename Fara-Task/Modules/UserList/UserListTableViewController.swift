@@ -23,18 +23,25 @@ class UserListTableViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        interactor.reoladTable = { [tableView] in
+            tableView?.reloadData()
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return interactor.users?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let users = interactor.users else { return .init() }
         let cell = tableView.dequeueReusableCell(UserListCell.self)
+        let user = users[indexPath.row]
         let viewModel = UserListCellViewModel(
-            name: "name",
-            address: "address",
-            onTap: { [interactor] in
-                interactor.onTap(user: User(id: 1, name: "name", username: "name", email: "email", address: .init(street: "street", suite: "suite", city: "city", zipcode: "code", geo: User.Address.Geo.init(lat: "123", lng: "1234")), phone: "123", website: URL(string: "123")!, company: User.Company.init(name: "name", catchPhrase: "ha", bs: "ba")))
-            }
+            name: user.name,
+            address: user.address.openAddress,
+            onTap: { [interactor] in interactor.onTap(user: user) }
         )
         cell.bind(withViewModel: viewModel)
         return cell
