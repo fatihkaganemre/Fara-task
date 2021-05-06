@@ -10,14 +10,40 @@ import Foundation
 protocol WebServiceCore {
     func performRequest(
         _ path: String,
+        queue: DispatchQueue,
         completion: @escaping (Result<Void, Error>) -> Void
     )
     
     func performRequest<ParsedResponse>(
         _ path: String,
         responseParsing: Parsing<ParsedResponse>,
+        queue: DispatchQueue,
         completion: @escaping (Result<ParsedResponse, Error>) -> Void
     )
+}
+
+extension WebServiceCore {
+    func performRequest<ParsedResponse>(
+        _ path: String,
+        responseParsing: Parsing<ParsedResponse>,
+        queue: DispatchQueue = .main,
+        completion: @escaping (Result<ParsedResponse, Error>) -> Void
+    ) {
+        performRequest(
+            path,
+            responseParsing: responseParsing,
+            queue: queue,
+            completion: completion
+        )
+    }
+    
+    func performRequest(
+        _ path: String,
+        queue: DispatchQueue = .main,
+        completion: @escaping (Result<Void, Error>) -> Void
+    ) {
+        performRequest(path, queue: queue, completion: completion)
+    }
 }
 
 class WebServiceCoreImp: WebServiceCore {
@@ -33,11 +59,13 @@ class WebServiceCoreImp: WebServiceCore {
     
     func performRequest(
         _ path: String,
+        queue: DispatchQueue,
         completion: @escaping (Result<Void, Error>) -> Void
     ) {
         return performRequest(
             path,
             responseParsing: .void,
+            queue: queue,
             completion: completion
         )
     }
@@ -45,11 +73,12 @@ class WebServiceCoreImp: WebServiceCore {
     func performRequest<ParsedResponse>(
         _ path: String,
         responseParsing: Parsing<ParsedResponse>,
+        queue: DispatchQueue,
         completion: @escaping (Result<ParsedResponse, Error>) -> Void
     ) {
         let url = URL(string: path)!
         let request = URLRequest(url: url)
-        peformDataRequest(request) { result in
+        peformDataRequest(request, queue: queue) { result in
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -66,7 +95,8 @@ class WebServiceCoreImp: WebServiceCore {
     
     private func peformDataRequest(
         _ request: URLRequest,
-        _ completion: @escaping (Result<Data?, Error>) -> Void
+        queue: DispatchQueue,
+        completion: @escaping (Result<Data?, Error>) -> Void
     ) {
         dataTask = session.dataTask(with: request) { [weak self] data, response, error in
             defer {
@@ -76,9 +106,7 @@ class WebServiceCoreImp: WebServiceCore {
             if let error = error {
                 completion(.failure(error))
             } else {
-                DispatchQueue.main.async {
-                    completion(.success(data))
-                }
+                queue.async { completion(.success(data)) }
             }
         }
         

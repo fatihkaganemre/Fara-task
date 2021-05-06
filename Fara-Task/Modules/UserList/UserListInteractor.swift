@@ -34,7 +34,6 @@ class UserListInteractor {
             switch result {
             case let .success(users):
                 self.users = users
-                router.present(alert: .requestFailedAlert(errorMessage: "error.localizedDescription"))
             case let .failure(error):
                 router.present(alert: .requestFailedAlert(errorMessage: error.localizedDescription))
             }
